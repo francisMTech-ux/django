@@ -1,0 +1,27 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homepage</title>
+</head>
+<body>
+<a href="{% url 'home' %}">home</a>
+<a href="{% url 'about' %}">about</a>
+<a href="{% url 'contact' %}">contact</a>
+<a href="{% url 'blog' %}">blogs</a>
+<a href="{% url 'services' %}">services</a>
+<a href="{% url 'our work' %}">our work</a>
+<h2>welcome to Django</h2>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque cupiditate delectus dolor dolore fuga illo, illum nisi numquam, possimus quam quasi reiciendis repellendus reprehenderit rerum sit tempore, temporibus velit?</span><span>Cupiditate eveniet, laudantium! Ab alias aliquid amet blanditiis cupiditate, debitis dignissimos dolorem ducimus earum eum fugiat, ipsum itaque minima nemo neque, quam quia quis quo recusandae sequi sit totam velit.</span></p>
+
+<img src="{% static 'images/img.png' %}" alt="">
+<img src="{% static 'images/img2.png' %}" alt="">
+</body>
+</html>
